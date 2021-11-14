@@ -1,0 +1,156 @@
+<ns0:Invoice xmlns:ns0="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:ns2="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ns3="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
+    <ns2:UBLVersionID>2.1</ns2:UBLVersionID>
+    <ns2:CustomizationID>urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3.0</ns2:CustomizationID>
+    <ns2:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ns2:ProfileID><ns2:ID>24059194</ns2:ID>
+    <ns2:IssueDate>2014-07-04</ns2:IssueDate>
+    <ns2:DueDate>2021-10-29</ns2:DueDate><ns2:InvoiceTypeCode>380</ns2:InvoiceTypeCode>
+    <ns2:Note>AAI: TVA ACQUITEE SUR LES DEBITSAUCUN ESCOMPTE EN CAS DE PAIEMENT ANTICIPE SAUF ACCORD</ns2:Note>
+    <ns2:DocumentCurrencyCode>EUR</ns2:DocumentCurrencyCode>
+    <ns3:OrderReference>
+        <ns2:ID>87060670</ns2:ID>
+    </ns3:OrderReference>
+    <ns3:AccountingSupplierParty>
+        <ns3:Party>
+            <ns2:EndpointID schemeID="0151">47555222000</ns2:EndpointID>
+            <ns3:PartyName>
+                <ns2:Name>ZANINI FRANCE S.A.S</ns2:Name>
+            </ns3:PartyName>
+            <ns3:PostalAddress><ns2:StreetName>Main Street 1</ns2:StreetName><ns2:CityName>Harrison</ns2:CityName><ns2:PostalZone>2912</ns2:PostalZone><ns3:Country><ns2:IdentificationCode>AU</ns2:IdentificationCode></ns3:Country></ns3:PostalAddress><ns3:PartyTaxScheme>
+                <ns2:CompanyID>47555222000</ns2:CompanyID>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:PartyTaxScheme>
+            <ns3:PartyLegalEntity>
+                <ns2:RegistrationName>ZANINI FRANCE SOCIETE ANONYME CAPITAL SOCIAL 914694,10 EUR</ns2:RegistrationName><ns2:CompanyID schemeID="0151">47555222000</ns2:CompanyID></ns3:PartyLegalEntity>
+        </ns3:Party>
+    </ns3:AccountingSupplierParty>
+    <ns3:AccountingCustomerParty>
+        <ns3:Party>
+            <ns2:EndpointID schemeID="0151">91888222000</ns2:EndpointID>
+            <ns3:PartyName>
+                <ns2:Name>PCA SA</ns2:Name>
+            </ns3:PartyName>
+            <ns3:PostalAddress>
+                <ns2:StreetName>C/O COMPTABILITE FOURNISSEURS</ns2:StreetName>
+                <ns2:AdditionalStreetName>TSA 60008</ns2:AdditionalStreetName>
+                <ns3:AddressLine>
+                    <ns2:Line>78091 YVELINES CEDEX 9</ns2:Line>
+                </ns3:AddressLine>
+                <ns3:Country>
+                    <ns2:IdentificationCode>FR</ns2:IdentificationCode>
+                </ns3:Country>
+            </ns3:PostalAddress>
+            <ns3:PartyTaxScheme>
+                <ns2:CompanyID>91888222000</ns2:CompanyID>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:PartyTaxScheme>
+        <ns3:PartyLegalEntity><ns2:RegistrationName>Buyer Official Name</ns2:RegistrationName><ns2:CompanyID schemeID="0151">91888222000</ns2:CompanyID></ns3:PartyLegalEntity></ns3:Party>
+    </ns3:AccountingCustomerParty>
+    <ns3:TaxRepresentativeParty>
+        <ns3:PartyName><ns2:Name>Mr Wilson</ns2:Name></ns3:PartyName><ns3:PostalAddress>
+            <ns3:Country>
+                <ns2:IdentificationCode>FR</ns2:IdentificationCode>
+            </ns3:Country>
+        </ns3:PostalAddress>
+        <ns3:PartyTaxScheme>
+            <ns2:CompanyID>47555222000</ns2:CompanyID>
+            <ns3:TaxScheme>
+                <ns2:ID>GST</ns2:ID>
+            </ns3:TaxScheme>
+        </ns3:PartyTaxScheme>
+    </ns3:TaxRepresentativeParty>
+    <ns3:Delivery>
+        <ns3:DeliveryLocation>
+            <ns3:Address>
+                <ns2:StreetName>MAGASIN LA</ns2:StreetName>
+                <ns2:AdditionalStreetName>ZI NR 3</ns2:AdditionalStreetName>
+                <ns3:AddressLine>
+                    <ns2:Line>59111 LIEU ST AMAND</ns2:Line>
+                </ns3:AddressLine>
+            <ns3:Country><ns2:IdentificationCode>AU</ns2:IdentificationCode></ns3:Country></ns3:Address>
+        </ns3:DeliveryLocation>
+        <ns3:DeliveryParty>
+            <ns3:PartyName>
+                <ns2:Name>PCA SA</ns2:Name>
+            </ns3:PartyName>
+        </ns3:DeliveryParty>
+    </ns3:Delivery>
+    <ns3:TaxTotal>
+        <ns2:TaxAmount currencyID="EUR">64.66</ns2:TaxAmount>
+        <ns3:TaxSubtotal>
+            <ns2:TaxableAmount currencyID="EUR">646.56</ns2:TaxableAmount>
+            <ns2:TaxAmount currencyID="EUR">64.66</ns2:TaxAmount>
+            <ns3:TaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent><ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                    </ns3:TaxScheme>
+            </ns3:TaxCategory>
+        </ns3:TaxSubtotal>
+    </ns3:TaxTotal>
+    <ns3:LegalMonetaryTotal>
+        <ns2:LineExtensionAmount currencyID="EUR">646.56</ns2:LineExtensionAmount>
+        <ns2:TaxExclusiveAmount currencyID="EUR">646.56</ns2:TaxExclusiveAmount>
+        <ns2:TaxInclusiveAmount currencyID="EUR">711.22</ns2:TaxInclusiveAmount>
+        <ns2:PayableAmount currencyID="EUR">711.22</ns2:PayableAmount>
+    </ns3:LegalMonetaryTotal>
+    <ns3:InvoiceLine>
+        <ns2:ID>1</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">323.28</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC JACINTHE ROUGE 16  SERIE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9665210780</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0101021</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9665210780</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.4900</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>2</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">323.28</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC JACINTHE ROUGE 16  SERIE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9665210780</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0101021</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9665210780</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.4900</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+</ns0:Invoice>

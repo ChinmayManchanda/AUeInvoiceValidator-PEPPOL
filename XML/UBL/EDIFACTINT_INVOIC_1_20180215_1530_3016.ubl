@@ -1,0 +1,2172 @@
+<ns0:Invoice xmlns:ns0="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:ns2="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ns3="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
+    <ns2:UBLVersionID>2.1</ns2:UBLVersionID>
+    <ns2:CustomizationID>urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3.0</ns2:CustomizationID>
+    <ns2:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ns2:ProfileID><ns2:ID>24074920</ns2:ID>
+    <ns2:IssueDate>2018-01-15</ns2:IssueDate>
+    <ns2:DueDate>2021-10-29</ns2:DueDate><ns2:InvoiceTypeCode>380</ns2:InvoiceTypeCode>
+    <ns2:Note>AAI: TVA ACQUITEE SUR LES DEBITSAUCUN ESCOMPTE EN CAS DE PAIEMENT ANTICIPE SAUF ACCORD</ns2:Note>
+    <ns2:DocumentCurrencyCode>EUR</ns2:DocumentCurrencyCode>
+    <ns3:OrderReference>
+        <ns2:ID>11049615</ns2:ID>
+    </ns3:OrderReference>
+    <ns3:AccountingSupplierParty>
+        <ns3:Party>
+            <ns2:EndpointID schemeID="0151">47555222000</ns2:EndpointID>
+            <ns3:PartyName>
+                <ns2:Name>ZANINI FRANCE S.A.S</ns2:Name>
+            </ns3:PartyName>
+            <ns3:PostalAddress><ns2:StreetName>Main Street 1</ns2:StreetName><ns2:CityName>Harrison</ns2:CityName><ns2:PostalZone>2912</ns2:PostalZone><ns3:Country><ns2:IdentificationCode>AU</ns2:IdentificationCode></ns3:Country></ns3:PostalAddress><ns3:PartyTaxScheme>
+                <ns2:CompanyID>47555222000</ns2:CompanyID>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:PartyTaxScheme>
+            <ns3:PartyLegalEntity>
+                <ns2:RegistrationName>ZANINI FRANCE SOCIETE ANONYME CAPITAL SOCIAL 914694,10 EUR</ns2:RegistrationName><ns2:CompanyID schemeID="0151">47555222000</ns2:CompanyID></ns3:PartyLegalEntity>
+        </ns3:Party>
+    </ns3:AccountingSupplierParty>
+    <ns3:AccountingCustomerParty>
+        <ns3:Party>
+            <ns2:EndpointID schemeID="0151">91888222000</ns2:EndpointID>
+            <ns3:PartyName>
+                <ns2:Name>PCA SA</ns2:Name>
+            </ns3:PartyName>
+            <ns3:PostalAddress>
+                <ns2:StreetName>C/O COMPTABILITE FOURNISSEURS</ns2:StreetName>
+                <ns2:AdditionalStreetName>TSA 10012</ns2:AdditionalStreetName>
+                <ns3:AddressLine>
+                    <ns2:Line>78091 YVELINES CEDEX 9</ns2:Line>
+                </ns3:AddressLine>
+                <ns3:Country>
+                    <ns2:IdentificationCode>FR</ns2:IdentificationCode>
+                </ns3:Country>
+            </ns3:PostalAddress>
+            <ns3:PartyTaxScheme>
+                <ns2:CompanyID>91888222000</ns2:CompanyID>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:PartyTaxScheme>
+        <ns3:PartyLegalEntity><ns2:RegistrationName>Buyer Official Name</ns2:RegistrationName><ns2:CompanyID schemeID="0151">91888222000</ns2:CompanyID></ns3:PartyLegalEntity></ns3:Party>
+    </ns3:AccountingCustomerParty>
+    <ns3:TaxRepresentativeParty>
+        <ns3:PartyName><ns2:Name>Mr Wilson</ns2:Name></ns3:PartyName><ns3:PostalAddress>
+            <ns3:Country>
+                <ns2:IdentificationCode>FR</ns2:IdentificationCode>
+            </ns3:Country>
+        </ns3:PostalAddress>
+        <ns3:PartyTaxScheme>
+            <ns2:CompanyID>47555222000</ns2:CompanyID>
+            <ns3:TaxScheme>
+                <ns2:ID>GST</ns2:ID>
+            </ns3:TaxScheme>
+        </ns3:PartyTaxScheme>
+    </ns3:TaxRepresentativeParty>
+    <ns3:Delivery>
+        <ns3:DeliveryLocation>
+            <ns3:Address>
+                <ns2:StreetName>DIRECTION PIECES DE RECHANGE</ns2:StreetName>
+                <ns2:AdditionalStreetName>ZI VESOUL OUEST</ns2:AdditionalStreetName>
+                <ns3:AddressLine>
+                    <ns2:Line>70000  VESOUL</ns2:Line>
+                </ns3:AddressLine>
+            <ns3:Country><ns2:IdentificationCode>AU</ns2:IdentificationCode></ns3:Country></ns3:Address>
+        </ns3:DeliveryLocation>
+        <ns3:DeliveryParty>
+            <ns3:PartyName>
+                <ns2:Name>PCA SA</ns2:Name>
+            </ns3:PartyName>
+        </ns3:DeliveryParty>
+    </ns3:Delivery>
+    <ns3:TaxTotal>
+        <ns2:TaxAmount currencyID="EUR">44.93</ns2:TaxAmount>
+        <ns3:TaxSubtotal>
+            <ns2:TaxableAmount currencyID="EUR">449.28</ns2:TaxableAmount>
+            <ns2:TaxAmount currencyID="EUR">44.93</ns2:TaxAmount>
+            <ns3:TaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent><ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                    </ns3:TaxScheme>
+            </ns3:TaxCategory>
+        </ns3:TaxSubtotal>
+    </ns3:TaxTotal>
+    <ns3:LegalMonetaryTotal>
+        <ns2:LineExtensionAmount currencyID="EUR">449.28</ns2:LineExtensionAmount>
+        <ns2:TaxExclusiveAmount currencyID="EUR">449.28</ns2:TaxExclusiveAmount>
+        <ns2:TaxInclusiveAmount currencyID="EUR">494.21</ns2:TaxInclusiveAmount>
+        <ns2:PayableAmount currencyID="EUR">494.21</ns2:PayableAmount>
+    </ns3:LegalMonetaryTotal>
+    <ns3:InvoiceLine>
+        <ns2:ID>1</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">36.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">224.64</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPB S20/M49 RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>541672</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGB0061002</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">541672</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1200</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>2</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">36.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">33.27</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPB S20/M49 RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>541672</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGB0061002</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">541672</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">0.9243</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>3</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">75.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">259.50</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC BACCARAT 2 RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416E1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0091012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416E1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.4600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>4</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">71.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">194.54</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC AIGLE CITROEN RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0101012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.7400</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>5</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">84.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">178.92</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MILAN RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F4</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0111012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F4</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>6</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">84.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">178.92</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MILAN RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F4</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0111012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F4</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>7</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">84.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">178.92</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MILAN RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F4</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0111012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F4</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>8</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">84.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">178.92</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MILAN RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F4</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0111012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F4</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>9</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">84.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">178.92</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MILAN RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F4</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0111012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F4</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>10</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">81.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">183.06</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CONDOR 14  RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F7</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0121012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F7</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.2600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>11</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">81.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">183.06</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CONDOR 14  RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F7</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0121012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F7</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.2600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>12</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">81.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">183.06</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CONDOR 14  RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F7</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0121012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F7</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.2600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>13</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">81.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">183.06</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CONDOR 14  RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416F7</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0121012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416F7</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.2600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>14</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">58.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">193.72</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC BACCARAT RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>541691</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0031012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">541691</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.3400</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>15</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">186.73</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC INCA 15 P RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416H3</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0151012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416H3</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5580</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>16</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">186.73</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC INCA 15 P RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416H3</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0151012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416H3</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5580</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>17</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">186.73</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC INCA 15 P RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416H3</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0151012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416H3</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5580</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>18</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">71.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">231.46</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CHAMBORD RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416E3</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0071012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416E3</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.2600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>19</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">71.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">231.46</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CHAMBORD RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416E3</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0071012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416E3</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.2600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>20</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">71.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">231.46</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CHAMBORD RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416E3</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0071012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416E3</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.2600</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>21</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">62.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">227.97</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC TOLIMAN 16 PR T7</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N0</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0181012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N0</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.6770</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>22</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MIKA 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416L9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0171012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416L9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>23</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MIKA 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416L9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0171012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416L9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>24</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MIKA 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416L9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0171012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416L9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>25</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC MIKA 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416L9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0171012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416L9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>26</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0161012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>27</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0161012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>28</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0161012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>29</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0161012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>30</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0161012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>31</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0161012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>32</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">225.36</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX 15 PR T7-PGT-B15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416N1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0161012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416N1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>33</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">56.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">239.68</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC STYLE 17  T84 RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416Q8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0211012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416Q8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.2800</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>34</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">56.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">239.68</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC STYLE 17  T84 RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416Q8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0211012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416Q8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.2800</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>35</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">56.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">239.68</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC STYLE 17  T84 RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416Q8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0211012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416Q8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.2800</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>36</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">56.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">239.68</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC STYLE 17  T84 RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416Q8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0211012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416Q8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.2800</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>37</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">64.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">309.76</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCLEAR 16 NOIR PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416S1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416S1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.8400</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>38</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">190.53</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR WHALETAIL 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0231012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.6100</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>39</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">190.53</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR WHALETAIL 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0231012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.6100</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>40</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">190.53</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR WHALETAIL 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0231012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.6100</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>41</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">190.53</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR WHALETAIL 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0231012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.6100</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>42</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">190.53</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR WHALETAIL 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R9</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0231012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R9</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.6100</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>43</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">186.15</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR ASTERODEA 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0221012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5500</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>44</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">186.15</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR ASTERODEA 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0221012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5500</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>45</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">186.15</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR ASTERODEA 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0221012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5500</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>46</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">73.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">186.15</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC PR ASTERODEA 15</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R8</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0221012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R8</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5500</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>47</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">66.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">277.86</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC 16  T87 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0231012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.2100</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>48</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">66.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">277.86</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC 16  T87 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416R5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0231012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416R5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">4.2100</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>49</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">71.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">218.68</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC AIGLE PEUGEOT RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416S5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0241012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416S5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.0800</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>50</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">90.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">233.19</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CUBA RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9648316280</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0091012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9648316280</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5910</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>51</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">90.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">233.19</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CUBA RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9648316280</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0091012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9648316280</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5910</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>52</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">90.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">233.19</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CUBA RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9648316280</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0091012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9648316280</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5910</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>53</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">90.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">233.19</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC CUBA RECHANGE</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9648316280</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0091012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9648316280</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">2.5910</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>54</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>55</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>56</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>57</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>58</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>59</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>60</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>61</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>62</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>63</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">118.38</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. NOIR KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J1</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241013</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J1</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">19.7300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>64</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">132.78</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. BLA KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J2</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241023</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J2</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">22.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>65</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">6.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">132.78</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC NUCL. BLA KIT4 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>9406J2</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>CRT0241023</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">9406J2</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">22.1300</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>66</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">224.64</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX T7 MVIE 15 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0251012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1200</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>67</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">224.64</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX T7 MVIE 15 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0251012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1200</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>68</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">224.64</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX T7 MVIE 15 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0251012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1200</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>69</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">224.64</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX T7 MVIE 15 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0251012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1200</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>70</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">224.64</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX T7 MVIE 15 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0251012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1200</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>71</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">72.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">224.64</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC SILEX T7 MVIE 15 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T5</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0251012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T5</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.1200</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>72</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">62.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">227.54</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC TOLIMAN T7MVIE 16 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T6</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0261012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T6</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.6700</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>73</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">62.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">227.54</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC TOLIMAN T7MVIE 16 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T6</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0261012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T6</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.6700</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+    <ns3:InvoiceLine>
+        <ns2:ID>74</ns2:ID>
+        <ns2:InvoicedQuantity unitCode="C62">62.00</ns2:InvoicedQuantity>
+        <ns2:LineExtensionAmount currencyID="EUR">227.54</ns2:LineExtensionAmount>
+        <ns3:Item>
+            <ns2:Name>TPC TOLIMAN T7MVIE 16 PR</ns2:Name>
+            <ns3:BuyersItemIdentification>
+                <ns2:ID>5416T6</ns2:ID>
+            </ns3:BuyersItemIdentification>
+            <ns3:SellersItemIdentification>
+                <ns2:ID>PGT0261012</ns2:ID>
+            </ns3:SellersItemIdentification>
+            <ns3:StandardItemIdentification>
+                <ns2:ID schemeID="0002">5416T6</ns2:ID>
+            </ns3:StandardItemIdentification>
+            <ns3:ClassifiedTaxCategory>
+                <ns2:ID>S</ns2:ID>
+                <ns2:Percent>10</ns2:Percent>
+                <ns3:TaxScheme>
+                    <ns2:ID>GST</ns2:ID>
+                </ns3:TaxScheme>
+            </ns3:ClassifiedTaxCategory>
+        </ns3:Item>
+        <ns3:Price>
+            <ns2:PriceAmount currencyID="EUR">3.6700</ns2:PriceAmount>
+            <ns2:BaseQuantity>1.00</ns2:BaseQuantity>
+        </ns3:Price>
+    </ns3:InvoiceLine>
+</ns0:Invoice>

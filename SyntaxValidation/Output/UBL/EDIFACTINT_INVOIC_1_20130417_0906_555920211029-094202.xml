@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:error="https://doi.org/10.5281/zenodo.1495494#error"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:schxslt-api="https://doi.org/10.5281/zenodo.1495494#api"
+                        xmlns:schxslt="https://doi.org/10.5281/zenodo.1495494"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                        xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+                        xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                        xmlns:cn="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2"
+                        xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+   <svrl:ns-prefix-in-attribute-values prefix="ext"
+                                       uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"/>
+   <svrl:ns-prefix-in-attribute-values prefix="cbc"
+                                       uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <svrl:ns-prefix-in-attribute-values prefix="cac"
+                                       uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
+   <svrl:ns-prefix-in-attribute-values prefix="qdt"
+                                       uri="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"/>
+   <svrl:ns-prefix-in-attribute-values prefix="udt"
+                                       uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"/>
+   <svrl:ns-prefix-in-attribute-values prefix="cn"
+                                       uri="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2"/>
+   <svrl:ns-prefix-in-attribute-values prefix="ubl"
+                                       uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"/>
+   <svrl:ns-prefix-in-attribute-values prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+   <svrl:metadata xmlns:dct="http://purl.org/dc/terms/"
+                  xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+      <dct:creator>
+         <dct:Agent>
+            <skos:prefLabel>SAXON/HE 9.9.1.5</skos:prefLabel>
+         </dct:Agent>
+      </dct:creator>
+      <dct:created>2021-10-29T09:42:03.857+11:00</dct:created>
+      <dct:source>
+         <rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <dct:creator>
+               <dct:Agent>
+                  <skos:prefLabel>SchXslt/1.8.2 SAXON/HE 9.9.1.5</skos:prefLabel>
+                  <schxslt.compile.typed-variables xmlns="https://doi.org/10.5281/zenodo.1495494#">true</schxslt.compile.typed-variables>
+               </dct:Agent>
+            </dct:creator>
+            <dct:created>2021-09-22T11:48:47.996+10:00</dct:created>
+         </rdf:Description>
+      </dct:source>
+   </svrl:metadata>
+   <svrl:active-pattern id="UBL-model"
+                        documents="file:///C:/Users/Sunil/CAPSTONE/Class/XML//EDIFACTINT_INVOIC_1_20130417_0906_5559.ubl"/>
+   <svrl:fired-rule context="/ubl:Invoice | /cn:CreditNote"/>
+   <svrl:fired-rule context="cac:AccountingSupplierParty/cac:Party/cbc:EndpointID"/>
+   <svrl:fired-rule context="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress"/>
+   <svrl:fired-rule context="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID"/>
+   <svrl:fired-rule context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress"/>
+   <svrl:fired-rule context="cac:TaxRepresentativeParty"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxRepresentativeParty[1]"
+                       flag="fatal"
+                       id="BR-18"
+                       test="(cac:PartyName/cbc:Name) != ''">
+      <svrl:text>[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11)</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxRepresentativeParty[1]"
+                       flag="fatal"
+                       id="BR-56-AUNZ"
+                       test="exists(cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'GST')]/cbc:CompanyID)">
+      <svrl:text>[BR-56-AUNZ]-Each Seller tax representative party (BG-11) shall have a Seller tax representative Tax identifier (BT-63).</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="cac:TaxRepresentativeParty/cac:PostalAddress"/>
+   <svrl:fired-rule context="cac:Delivery/cac:DeliveryLocation/cac:Address"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}Delivery[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}DeliveryLocation[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}Address[1]"
+                       flag="fatal"
+                       id="BR-57"
+                       test="exists(cac:Country/cbc:IdentificationCode)">
+      <svrl:text>[BR-57]-Each Deliver to address (BG-15) shall contain a Deliver to country code (BT-80).</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="/ubl:Invoice/cac:TaxTotal | /cn:CreditNote/cac:TaxTotal"/>
+   <svrl:fired-rule context="cac:TaxTotal/cac:TaxSubtotal"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxTotal[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxSubtotal[1]"
+                       flag="fatal"
+                       id="BR-47-AUNZ"
+                       test="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/cbc:ID)">
+      <svrl:text>[BR-47-AUNZ]-Each Tax breakdown (BG-23) shall be defined through a Tax category code (BT-118).</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxTotal[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxSubtotal[1]"
+                       flag="fatal"
+                       id="BR-48-AUNZ"
+                       test="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/cbc:Percent) or (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/normalize-space(cbc:ID)='O')">
+      <svrl:text>[BR-48-AUNZ]-Each Tax breakdown (BG-23) shall have a Tax category rate (BT-119), except if the Invoice is not subject to Tax.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxTotal[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}TaxSubtotal[1]"
+                       flag="fatal"
+                       id="BR-CO-17-AUNZ"
+                       test="(round(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent)) = 0 and (round(xs:decimal(cbc:TaxAmount)) = 0)) or (round(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent)) != 0 and ((abs(xs:decimal(cbc:TaxAmount)) - 1 &lt; round(abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 ) and (abs(xs:decimal(cbc:TaxAmount)) + 1 &gt; round(abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 )))  or (not(exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent))) and (round(xs:decimal(cbc:TaxAmount)) = 0))">
+      <svrl:text>[BR-CO-17-AUNZ]-Tax category tax amount (BT-117) = Tax category taxable amount (BT-116) x (Tax category rate (BT-119) / 100), rounded to two decimals.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="cac:LegalMonetaryTotal"/>
+   <svrl:fired-rule context="/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}LegalMonetaryTotal[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2}PayableAmount[1]"
+                       flag="fatal"
+                       id="BR-CO-25"
+                       test="((. &gt; 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">
+      <svrl:text>[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="cac:InvoiceLine | cac:CreditNoteLine"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}InvoiceLine[1]"
+                       flag="fatal"
+                       id="BR-CO-04-AUNZ"
+                       test="(cac:Item/cac:ClassifiedTaxCategory[cac:TaxScheme/(normalize-space(upper-case(cbc:ID))='GST')]/cbc:ID)">
+      <svrl:text>[BR-CO-04-AUNZ]-Each Invoice line (BG-25) shall be categorized with an Invoiced item Tax category code (BT-151).</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID | cac:CreditNoteLine/cac:Item/cac:StandardItemIdentification/cbc:ID"/>
+   <svrl:fired-rule context="cac:InvoiceLine | cac:CreditNoteLine"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}InvoiceLine[2]"
+                       flag="fatal"
+                       id="BR-CO-04-AUNZ"
+                       test="(cac:Item/cac:ClassifiedTaxCategory[cac:TaxScheme/(normalize-space(upper-case(cbc:ID))='GST')]/cbc:ID)">
+      <svrl:text>[BR-CO-04-AUNZ]-Each Invoice line (BG-25) shall be categorized with an Invoiced item Tax category code (BT-151).</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID | cac:CreditNoteLine/cac:Item/cac:StandardItemIdentification/cbc:ID"/>
+   <svrl:active-pattern id="UBL-syntax"
+                        documents="file:///C:/Users/Sunil/CAPSTONE/Class/XML//EDIFACTINT_INVOIC_1_20130417_0906_5559.ubl"/>
+   <svrl:fired-rule context="/ubl:Invoice | /cn:CreditNote"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]"
+                       flag="warning"
+                       id="UBL-CR-139"
+                       test="not(cac:AccountingSupplierParty/cbc:AdditionalAccountID)">
+      <svrl:text>[UBL-CR-139]-A UBL invoice should not include the AccountingSupplierParty AdditionalAccountID</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]"
+                       flag="warning"
+                       id="UBL-CR-203"
+                       test="not(cac:AccountingCustomerParty/cbc:AdditionalAccountID)">
+      <svrl:text>[UBL-CR-203]-A UBL invoice should not include the AccountingCustomerParty AdditionalAccountID</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]"
+                       flag="warning"
+                       id="UBL-CR-392"
+                       test="not(cac:Delivery/cac:DeliveryParty/cac:PartyIdentification)">
+      <svrl:text>[UBL-CR-392]-A UBL invoice should not include the DeliveryParty PartyIdentification</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]"
+                       flag="warning"
+                       id="UBL-CR-499"
+                       test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:Percent)">
+      <svrl:text>[UBL-CR-499]-A UBL invoice should not include the TaxTotal TaxSubtotal Percent</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]"
+                       flag="warning"
+                       id="UBL-CR-510"
+                       test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:TaxTypeCode)">
+      <svrl:text>[UBL-CR-510]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory TaxScheme TaxTypeCode</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]"
+                       flag="warning"
+                       id="UBL-CR-550"
+                       test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Delivery)">
+      <svrl:text>[UBL-CR-550]-A UBL invoice should not include the InvoiceLine Delivery</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="cac:AccountingSupplierParty/cac:Party"/>
+   <svrl:fired-rule context="cac:TaxRepresentativeParty"/>
+   <svrl:fired-rule context="cac:Delivery"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="cac:TaxSubtotal"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="cac:InvoiceLine | cac:CreditNoteLine"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="cac:Delivery"/>
+   <svrl:fired-rule context="cac:InvoiceLine | cac:CreditNoteLine"/>
+   <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
+   <svrl:fired-rule context="cac:Delivery"/>
+   <svrl:active-pattern id="Codesmodel"
+                        documents="file:///C:/Users/Sunil/CAPSTONE/Class/XML//EDIFACTINT_INVOIC_1_20130417_0906_5559.ubl"/>
+   <svrl:fired-rule flag="fatal" context="cbc:InvoiceTypeCode | cbc:CreditNoteTypeCode"/>
+   <svrl:fired-rule flag="fatal" context="cbc:DocumentCurrencyCode"/>
+   <svrl:fired-rule flag="fatal" context="cbc:EndpointID[@schemeID]"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}AccountingSupplierParty[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}Party[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2}EndpointID[1]"
+                       flag="fatal"
+                       id="BR-CL-25"
+                       test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0002 0007 0009 0037 0060 0088 0096 0097 0106 0130 0135 0142 0151 0183 0184 0190 0191 0192 0193 0194 0195 0196 0198 0199 0200 0201 0202 0203 0204 0208 0209 0210 0211 0212 0213 9901 9902 9904 9905 9906 9907 9910 9913 9914 9915 9918 9919 9920 9922 9923 9924 9925 9926 9927 9928 9929 9930 9931 9932 9933 9934 9935 9936 9937 9938 9939 9940 9941 9942 9943 9944 9945 9946 9947 9948 9949 9950 9951 9952 9953 9955 9957 AN AQ AS AU EM ', concat(' ', normalize-space(@schemeID), ' '))))">
+      <svrl:text>[BR-CL-25]-Endpoint identifier scheme identifier MUST belong to the CEF EAS code list</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule flag="fatal" context="cac:Country/cbc:IdentificationCode"/>
+   <svrl:fired-rule flag="fatal" context="cbc:EndpointID[@schemeID]"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}AccountingCustomerParty[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}Party[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2}EndpointID[1]"
+                       flag="fatal"
+                       id="BR-CL-25"
+                       test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0002 0007 0009 0037 0060 0088 0096 0097 0106 0130 0135 0142 0151 0183 0184 0190 0191 0192 0193 0194 0195 0196 0198 0199 0200 0201 0202 0203 0204 0208 0209 0210 0211 0212 0213 9901 9902 9904 9905 9906 9907 9910 9913 9914 9915 9918 9919 9920 9922 9923 9924 9925 9926 9927 9928 9929 9930 9931 9932 9933 9934 9935 9936 9937 9938 9939 9940 9941 9942 9943 9944 9945 9946 9947 9948 9949 9950 9951 9952 9953 9955 9957 AN AQ AS AU EM ', concat(' ', normalize-space(@schemeID), ' '))))">
+      <svrl:text>[BR-CL-25]-Endpoint identifier scheme identifier MUST belong to the CEF EAS code list</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule flag="fatal" context="cac:Country/cbc:IdentificationCode"/>
+   <svrl:fired-rule flag="fatal" context="cac:PartyLegalEntity/cbc:CompanyID[@schemeID]"/>
+   <svrl:fired-rule flag="fatal" context="cac:Country/cbc:IdentificationCode"/>
+   <svrl:fired-rule flag="fatal" context="cac:PartyIdentification/cbc:ID[@schemeID]"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal" context="cac:TaxCategory/cbc:ID"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:InvoicedQuantity[@unitCode] | cbc:BaseQuantity[@unitCode] | cbc:CreditedQuantity[@unitCode]"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal" context="cac:StandardItemIdentification/cbc:ID[@schemeID]"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}InvoiceLine[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}Item[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}StandardItemIdentification[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2}ID[1]"
+                       flag="fatal"
+                       id="BR-CL-21"
+                       test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 0203 0204 0205 0206 0207 0208 0209 0210 0211 0212 0213 ', concat(' ', normalize-space(@schemeID), ' '))))">
+      <svrl:text>[BR-CL-21]-Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD code list</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule flag="fatal" context="cac:ClassifiedTaxCategory/cbc:ID"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:InvoicedQuantity[@unitCode] | cbc:BaseQuantity[@unitCode] | cbc:CreditedQuantity[@unitCode]"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+   <svrl:fired-rule flag="fatal" context="cac:StandardItemIdentification/cbc:ID[@schemeID]"/>
+   <svrl:failed-assert location="/Q{urn:oasis:names:specification:ubl:schema:xsd:Invoice-2}Invoice[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}InvoiceLine[2]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}Item[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2}StandardItemIdentification[1]/Q{urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2}ID[1]"
+                       flag="fatal"
+                       id="BR-CL-21"
+                       test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 0203 0204 0205 0206 0207 0208 0209 0210 0211 0212 0213 ', concat(' ', normalize-space(@schemeID), ' '))))">
+      <svrl:text>[BR-CL-21]-Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD code list</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule flag="fatal" context="cac:ClassifiedTaxCategory/cbc:ID"/>
+   <svrl:fired-rule flag="fatal"
+                    context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount"/>
+</svrl:schematron-output>
